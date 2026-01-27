@@ -1,0 +1,13 @@
+# Ignorar carpetas de entorno virtual y cache
+venv/
+__pycache__/
+.idea/
+.vscode/
+
+# Ignorar datos sensibles y sesión
+contactos.xlsx
+chromeprofile/
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
