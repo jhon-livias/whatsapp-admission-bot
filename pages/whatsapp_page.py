@@ -5,7 +5,7 @@ from pages.base_page import BasePage
 class WhatsAppPage(BasePage):
     # --- SELECTORES (XPATH) ---
     # Usamos data-icon="send" que es más estable que las clases raras
-    BTN_ENVIAR = (By.XPATH, '//span[@data-icon="send"]')
+    BTN_ENVIAR = (By.XPATH, '//span[@data-icon="wds-ic-send-filled"]')
     
     # Check de carga (buscamos la barra lateral de chats para saber que cargó)
     PANEL_LATERAL = (By.XPATH, '//div[@id="side"]') 
