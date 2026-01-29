@@ -23,26 +23,45 @@ TIEMPO_ANTES_DE_ENVIAR = 2
 # Timeouts de Selenium
 WAIT_TIMEOUT = 30
 
+# Variable auxiliar para no repetir la lista gigante 10 veces en el código
+# \n significa "salto de línea"
+CARRERAS_UPRIT = """📚 Carreras disponibles:
+✔️ Derecho
+✔️ Educación Inicial
+✔️ Educación Primaria
+✔️ Educación Física y Ciencias del Deporte
+✔️ Educación con mención en Idiomas Extranjeros
+✔️ Educación Matemática e Informática
+✔️ Educación Secundaria con mención en Ciencias Sociales
+✔️ Educación Secundaria esp. Ciencias Matemáticas y Tecnología
+✔️ Educación Secundaria esp. Comunicación, Lingüística y Literatura
+✔️ Ingeniería Industrial
+✔️ Arquitectura y Urbanismo
+✔️ Ingeniería de Sistemas e Inteligencia Artificial
+✔️ Ingeniería Civil 
+✔️ Psicología 
+✔️ Contabilidad y Finanzas
+✔️ Administración de Empresas
+✔️ Administración Portuaria y de Transporte Intermodal
+✔️ Marketing y Negocios Internacionales
+"""
+
 # --- LISTA DE MENSAJES ROTATIVOS ---
-# IMPORTANTE: Mantén el texto "{nombre}" donde quieras que aparezca el nombre del alumno.
 MENSAJES_TEMPLATES = [
-    "Hola {nombre}, te saludamos del área de admisión. Queríamos invitarte a conocer nuestra propuesta académica para este año. ¿Te gustaría más info?",
-    
-    "Buenos días {nombre}, esperamos que estés bien. Te escribimos de la universidad para contarte sobre las fechas de postulación vigentes.",
-    
-    "Estimado/a {nombre}, ¿cómo estás? Soy del equipo de admisión. Estamos contactando a los postulantes interesados. Avísame si tienes dudas.",
-    
-    "¡Hola {nombre}! 🎓 Queríamos asegurarnos de que tengas toda la información para tu postulación a la universidad. Quedamos atentos.",
-    
-    "Saludos {nombre}, te contactamos para brindarte asesoría sobre el proceso de admisión. ¿Tienes alguna carrera en mente?",
-    
-    "{nombre}, gusto en saludarte. Te escribo brevemente para compartirte información sobre el examen de admisión de la universidad.",
-    
-    "Hola, {nombre}. Vimos tu interés en postular y queremos ayudarte con el proceso de inscripción. ¿Podemos ayudarte en algo?",
-    
-    "Buen día {nombre}. Te recordamos que las inscripciones están abiertas. Si necesitas la guía de admisión, avísame por aquí.",
-    
-    "Hola {nombre}, un gusto saludarte. Soy asistente de admisión de la universidad. Te escribo para resolver dudas sobre tu postulación.",
-    
-    "👋 Hola {nombre}, ¿todo bien? Te dejo info sobre nuestro proceso de admisión por si te interesa postular este ciclo."
+    f"""🚨 ATENCIÓN FUTUROS UNIVERSITARIOS 🚨
+
+Da hoy el primer paso hacia tu futuro profesional en la
+🎓 Universidad Privada de Trujillo
+
+📅 Examen de Admisión: 27 de febrero
+Prepárate con una formación que te acompañará toda la vida.
+
+{CARRERAS_UPRIT}
+
+🎉 INSCRIPCIÓN 100% EXONERADA
+👉 Válido al matricularte en cualquiera de nuestras carreras.
+
+📲 Escríbenos AHORA y asegura tu vacante:  970597183 - 966288497
+⏳ Cupos limitados.
+"""
 ]
