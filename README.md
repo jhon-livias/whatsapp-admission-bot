@@ -35,7 +35,7 @@ source venv/bin/activate
 **NOTA:** Si alguna vez necesitas correrlo en Windows, el comando sería 
 
 ```bash
-venv\Scripts\activate.
+venv\Scripts\activate
 ```
 
 ### 4. Instalar Dependencias

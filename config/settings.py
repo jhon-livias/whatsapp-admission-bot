@@ -10,8 +10,8 @@ LOG_FILE = os.path.join(BASE_DIR, 'enviados.log') # <--- NUEVO ARCHIVO DE REGIST
 
 # Intervalo entre mensajes (Segundos)
 # Rango: 90s a 120s (Promedio 1 min y algo)
-TIEMPO_ENTRE_MENSAJES_MIN = 90
-TIEMPO_ENTRE_MENSAJES_MAX = 120
+TIEMPO_ENTRE_MENSAJES_MIN = 60
+TIEMPO_ENTRE_MENSAJES_MAX = 90
 
 # Velocidad de escritura (tecleo)
 TYPING_SPEED_MIN = 0.03
