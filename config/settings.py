@@ -9,9 +9,9 @@ LOG_FILE = os.path.join(BASE_DIR, 'enviados.log') # <--- NUEVO ARCHIVO DE REGIST
 # --- TIEMPOS (Optimizado para ser más rápido pero "humano") ---
 
 # Intervalo entre mensajes (Segundos)
-# Rango: 90s a 120s (Promedio 1 min y algo)
-TIEMPO_ENTRE_MENSAJES_MIN = 60
-TIEMPO_ENTRE_MENSAJES_MAX = 90
+# Rango: 120s a 180s (Promedio 2 min y algo)
+TIEMPO_ENTRE_MENSAJES_MIN = 120
+TIEMPO_ENTRE_MENSAJES_MAX = 180
 
 # Velocidad de escritura (tecleo)
 TYPING_SPEED_MIN = 0.03
@@ -23,45 +23,45 @@ TIEMPO_ANTES_DE_ENVIAR = 2
 # Timeouts de Selenium
 WAIT_TIMEOUT = 30
 
-# Variable auxiliar para no repetir la lista gigante 10 veces en el código
-# \n significa "salto de línea"
-CARRERAS_UPRIT = """📚 Carreras disponibles:
-✔️ Derecho
-✔️ Educación Inicial
-✔️ Educación Primaria
-✔️ Educación Física y Ciencias del Deporte
-✔️ Educación con mención en Idiomas Extranjeros
-✔️ Educación Matemática e Informática
-✔️ Educación Secundaria con mención en Ciencias Sociales
-✔️ Educación Secundaria esp. Ciencias Matemáticas y Tecnología
-✔️ Educación Secundaria esp. Comunicación, Lingüística y Literatura
-✔️ Ingeniería Industrial
-✔️ Arquitectura y Urbanismo
-✔️ Ingeniería de Sistemas e Inteligencia Artificial
-✔️ Ingeniería Civil 
-✔️ Psicología 
-✔️ Contabilidad y Finanzas
-✔️ Administración de Empresas
-✔️ Administración Portuaria y de Transporte Intermodal
-✔️ Marketing y Negocios Internacionales
-"""
-
 # --- LISTA DE MENSAJES ROTATIVOS ---
 MENSAJES_TEMPLATES = [
-    f"""🚨 ATENCIÓN FUTUROS UNIVERSITARIOS 🚨
-
-Da hoy el primer paso hacia tu futuro profesional en la
-🎓 Universidad Privada de Trujillo
-
-📅 Examen de Admisión: 27 de febrero
-Prepárate con una formación que te acompañará toda la vida.
-
-{CARRERAS_UPRIT}
-
-🎉 INSCRIPCIÓN 100% EXONERADA
-👉 Válido al matricularte en cualquiera de nuestras carreras.
-
-📲 Escríbenos AHORA y asegura tu vacante:  970597183 - 966288497
-⏳ Cupos limitados.
-"""
+    "Hola {nombre},\n\n🌟 *No es solo una carrera, es formación para toda la vida.*\n\n📅 Examen de Admisión UPRIT: *27/02*\n👉 Inscripción GRATIS al matricularte. ¡Elige tu carrera!",
+    
+    "Hola {nombre},\n\n🚀 *El futuro no se espera, se construye.*\n\n🎓 Examen UPRIT: *27/02*\n✅ Formación para toda la vida + inscripción exonerada al matricularte.",
+    
+    "Hola {nombre},\n\n🎓 *En UPRIT no solo estudias, te preparas para la vida.*\n\n📅 Examen de Admisión: *27/02*\n✨ Inscripción GRATIS al matricularte. Tienes varias carreras para elegir.",
+    
+    "Hola {nombre},\n\n🔥 *Tu talento merece una formación que dure para siempre.*\n\n📅 Examen UPRIT: *27/02*\n👉 Matricúlate y accede a tu inscripción exonerada.",
+    
+    "Hola {nombre},\n\n✨ *Hoy eliges una carrera, mañana una vida profesional sólida.*\n\n🎓 Examen de Admisión UPRIT: *27/02*\n✅ Inscripción GRATIS al matricularte.",
+    
+    "Hola {nombre},\n\n💥 *Más que un examen, es el inicio de tu historia.*\n\n📅 Examen UPRIT: *27/02*\nFormación para toda la vida. ¡Inscripción exonerada al matricularte!",
+    
+    "Hola {nombre},\n\n🌱 *Crece, aprende y prepárate para todo.*\n\n🎓 Examen de Admisión UPRIT: *27/02*\n👉 Varias carreras + inscripción GRATIS al matricularte.",
+    
+    "Hola {nombre},\n\n😎 *Estudia hoy, vive preparado mañana.*\n\n📅 Examen UPRIT: *27/02*\n✅ Formación para toda la vida e inscripción exonerada al matricularte.",
+    
+    "Hola {nombre},\n\n🎯 *Haz una elección que valga para siempre.*\n\n🎓 Examen de Admisión UPRIT: *27/02*\n✨ Inscripción GRATIS solo por matricularte.",
+    
+    "Hola {nombre},\n\n💼 *UPRIT: donde tu carrera se convierte en tu proyecto de vida.*\n\n📅 Examen de Admisión: *27/02*\n✅ ¡Inscríbete ya! Inscripción exonerada al matricularte.",
+    
+    "Hola {nombre},\n\n✨ *No es solo estudiar, es formarte para toda la vida.*\n\n📅 Examen UPRIT: *27/02*\n🔥 Inscripción GRATIS al matricularte.",
+    
+    "Hola {nombre},\n\n🚀 *Tu futuro empieza con una buena decisión.*\n\n🎓 Examen de Admisión UPRIT: *27/02*\n✔ Varias carreras\n✔ Inscripción exonerada al matricularte",
+    
+    "Hola {nombre},\n\n😎 *Elige una carrera que te prepare para todo.*\n\n📅 UPRIT – Examen: *27/02*\n👉 Inscripción GRATIS solo por matricularte.",
+    
+    "Hola {nombre},\n\n🎓 *Aquí no vienes a pasar clases, vienes a construir tu futuro.*\n\n📅 Examen UPRIT: *27/02*\n✅ Formación para toda la vida.",
+    
+    "Hola {nombre},\n\n💥 *Menos dudas, más acción.*\n\n🎓 Examen de Admisión UPRIT: *27/02*\n✨ Inscripción GRATIS al matricularte + carreras a elegir.",
+    
+    "Hola {nombre},\n\n🌟 *Estudia hoy. Lidera mañana.*\n\n📅 Examen UPRIT: *27/02*\n✅ Formación que dura toda la vida.",
+    
+    "Hola {nombre},\n\n🔥 *Haz que tu carrera valga para siempre.*\n\n🎓 Examen de Admisión UPRIT: *27/02*\n👉 Inscripción exonerada al matricularte.",
+    
+    "Hola {nombre},\n\n🎯 *Tu talento merece una universidad que te prepare de verdad.*\n\n📅 Examen UPRIT: *27/02*\n✅ Inscripción GRATIS al matricularte.",
+    
+    "Hola {nombre},\n\n😍 *No es solo un examen, es el inicio de tu historia.*\n\n🎓 Examen UPRIT: *27/02*\n✨ Elige tu carrera, nosotros te formamos para toda la vida.",
+    
+    "Hola {nombre},\n\n🚨 *Últimos días para decidir tu futuro.*\n\n📅 Examen de Admisión UPRIT: *27/02*\n👉 Formación para toda la vida + inscripción GRATIS al matricularte."
 ]
